@@ -2,7 +2,8 @@ body{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -23,6 +24,7 @@ body{
 .nav_1 h2{
     margin: 0%;
     padding: 10px;
+    font-family: 'Cinzel', serif;
 }
 
 #head{
@@ -49,16 +51,23 @@ body{
     margin: 5px;
 }
 
-.nav_2 ul li a, h2 a{
+.nav_2 ul li a, .nav_1 h2 a{
+    margin-left: 10px;
     text-decoration: none;
     color: rgb(248, 239, 239);
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
 
+
 .nav_2 ul li a:hover{
     opacity: 0.4;
 }
+
+.fa{
+    color: #f6dc87;
+}
+
 
 
 
