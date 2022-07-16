@@ -1,0 +1,64 @@
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav{
+    width: 100%;
+    background-color: #212121;
+}
+
+.nav_1{
+    /*background-color: red;*/
+    float: left;
+    padding: 10px;
+    margin-right: 60px;
+}
+
+.nav_1 h2{
+    margin: 0%;
+    padding: 10px;
+}
+
+#head{
+    font-size: 28px;
+    color: #f6dc87;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 3px;
+}
+
+.nav_2{
+    padding: 10px;
+   /* background-color: blueviolet;*/
+}
+
+.nav_2 ul{
+    margin: 0%;
+    padding: 10px;
+    display: inline-flex;
+    list-style: none;
+}
+
+.nav_2 ul li{
+   padding: 0px 10px;
+    margin: 5px;
+}
+
+.nav_2 ul li a, h2 a{
+    text-decoration: none;
+    color: rgb(248, 239, 239);
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.nav_2 ul li a:hover{
+    opacity: 0.4;
+}
+
+
+
