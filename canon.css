@@ -12,10 +12,10 @@ body{
 
 h2{
     font-size: 18px;
-    font-weight: 700;
+    font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    margin: 0%;
-    padding: 10px;
+    margin: 0px;
+    padding: 0px;
 }
 
 h3{
@@ -41,56 +41,73 @@ p{
 }
 
 .nav_1{
+    width: 20%;
     float: left;
-    padding: 10px;
-    margin-right: 60px;
+   /* background-color: red;*/
 }
 
 .nav_1 h2{
-    margin: 0%;
-    padding: 10px;
-    font-family: 'Cinzel', serif;
+    margin: 0px;
+    padding: 20px 20px 20px 50px;
 }
 
-#head{
-    font-size: 28px;
-    color: #f6dc87;
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
-    padding-right: 3px;
-}
-
-.nav_2{
-    padding: 10px;
-}
-
-.nav_2 ul{
-    margin: 0%;
-    padding: 10px;
-    display: inline-flex;
-    list-style: none;
-}
-
-.nav_2 ul li{
-   padding: 0px 10px;
-    margin: 5px;
-}
-
-.nav_2 ul li a{
-    margin-left: 10px;
-    text-decoration: none;
-    color: rgb(248, 239, 239);
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-}
 .nav_1 h2 a{
     text-decoration: none;
     color: rgb(248, 239, 239);
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
 }
 
-.nav_2 ul li a:hover{
-    opacity: 0.4;
+#head{
+    color: #f6dc87;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 3px;
 }
 
+.nav_2{
+    width: 40%;
+    float: left;
+    /*background-color: rgb(18, 24, 22);*/
+}
+
+.nav_2 ul{
+    list-style: none;
+    display: inline-flex;
+    margin: 0%;
+    padding: 10px 0px;
+}
+
+.nav_2 ul li{
+   padding: 10px;
+   margin: 5px;
+}
+
+.nav_2 ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(248, 239, 239);
+ }
+
+ .nav_3{
+    width: 20%;
+    padding: 20px;
+    float: left;
+ }
+
+ .search_input{
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: left;
+    width: 60%;
+ }
+
+
+ .nav::after{
+    content: "";
+    display: table;
+    clear: both;
+ }
 /* ========================icon decoration =============================================*/
 
 .fa{
@@ -110,11 +127,10 @@ p{
     margin-right: 20px;
 }
 
-.reduce{
-    width: 10px;
-    height: 10px;
- }
-
+.collo{
+    color: #f6dc87;
+    margin-right: 5px;
+}
 
 /* =====================section element of the body content =========================================*/
 .section1{
@@ -144,6 +160,41 @@ p{
     color:  #0a0a07;
     margin-left: 18%;
     font-family: 'Cinzel', serif;
+}
+
+.imgcontact{
+    width: 25%;
+    float: right;
+}
+
+.imgcontact1{
+    background-image: url(./img/phone.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 300px;
+    border-width: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 50px 20% 0px 20%;
+}
+
+.imgcontact p{
+    width: 60%;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    background-color: #c55c5c;
+    padding: 10px 0px;
+    border-width: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0% 20%;
+}
+
+.imgcontact p a{
+    text-decoration: none;
+    color: rgb(248, 239, 239);
 }
 
 .link_list_main{
@@ -377,13 +428,20 @@ p{
     clear: both;
  }
 
- .footer1{
+ .footersocial{
     width: 25%;
+    /*background-color: aliceblue;*/
+    float: left;
+ }
+
+ .footer1{
+    width: 100%;
     font-size: 14px;
     text-align: left;
     font-weight: normal;
-    float: left;
+    /*float: left;*/
     color: #f6dc87;
+    margin-top: 20px;
     /*background-color: #c55c5c;*/
  }
 
@@ -413,19 +471,35 @@ p{
   border-bottom: 2px groove #c55c5c;
  }
 
+ .footer11{
+    width: 50%;
+    /*background-color: aquamarine;*/
+    padding: 0px 10px;
+    margin-left: 50px;
+ }
+
+ .footer11 a > img{
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    margin-top: 25px;
+   
+ }
+
  /* =============================second footer element ====================================================*/
  .footer2{
     width: 20%;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
     font-weight: 400;
     float: left;
-    /*background-color: #196f62;*/
+   /* background-color: #196f62;*/
  }
 
  .footer2 ul{
     list-style: none;
     padding: 0%;
+    margin-left: 20%;
  }
 
  .footer2 ul li{
@@ -452,7 +526,7 @@ p{
   .footer3{
     width: 20%;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
     font-weight: 400;
     float: left;
     /*background-color: #196f62;*/
